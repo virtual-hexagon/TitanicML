@@ -3,6 +3,11 @@
 # The purpose of this project is to use machine learning
 # techniques in python to predict the survival rate of the
 # passengers of the titanic.
+#---------------------------------------------------------
+#This model uses gender as the only criteria in predicting
+#the survival of any given passenger
+#---------------------------------------------------------
+
 
 ##########################
 ###### DEPENDENCIES ######
