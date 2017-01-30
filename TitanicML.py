@@ -78,3 +78,6 @@ with open(outputFilePath, 'wt') as predictionFile:
         else:
             predictionFileObject.writerow([row[0], "0"]) # predict that men die
             #print([row,"0"])
+
+
+            # Changes 4 real
