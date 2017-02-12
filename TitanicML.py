@@ -3,6 +3,10 @@
 # The purpose of this project is to use machine learning
 # techniques in python to predict the survival rate of the
 # passengers of the titanic.
+#---------------------------------------------------------
+# This model uses gender and class as the only criteria in
+# predicting the survival of any given passenger
+#---------------------------------------------------------
 
 ##########################
 ###### DEPENDENCIES ######
@@ -15,7 +19,7 @@ import DataUtils as dataUtils  # Collection of functions defined to group common
 #########################
 ##### READ IN FILES #####
 #########################
-scriptDir = os.path.dirname(__file__) #dynamically get current directory
+scriptDir = os.path.dirname(__file__) # dynamically get current directory
 trainingRelPath = "Data/train.csv"    # Relative path to training data
 testRelPath = "Data/test.csv"         # Relative path to test data
 
@@ -79,5 +83,3 @@ with open(outputFilePath, 'wt') as predictionFile:
             predictionFileObject.writerow([row[0], "0"]) # predict that men die
             #print([row,"0"])
 
-
-            # Changes 4 real
